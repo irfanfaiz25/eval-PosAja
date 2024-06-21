@@ -1,0 +1,54 @@
+<!-- start: Sidebar -->
+<div class="fixed left-0 top-0 w-64 h-full bg-white p-4 z-50 sidebar-menu transition-transform">
+    <a href="#" class="flex items-center pb-4 border-b border-b-blue-500">
+        <img src="{{ asset('img/simobile-logo.png') }}" alt="" class="w-8 h-8 rounded object-cover">
+        <span class="text-lg font-bold text-gray-800 ml-3">UPCUBE</span>
+    </a>
+
+    <ul class="mt-4">
+        <li class="mb-1 group">
+            <a href="/dashboard"
+                class="flex items-center py-2 px-4 text-gray-800 hover:bg-blue-500 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <i class="ri-home-2-line mr-3 text-lg"></i>
+                <span class="text-sm">Dashboard</span>
+            </a>
+        </li>
+        <li class="mb-1 group">
+            <a href="/"
+                class="flex items-center py-2 px-4 text-gray-800 hover:bg-blue-500 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <i class="ri-questionnaire-line mr-3 text-lg"></i>
+                <span class="text-sm">Pertanyaan</span>
+            </a>
+        </li>
+        <li class="mb-1 group">
+            <a href="/"
+                class="flex items-center py-2 px-4 text-gray-800 hover:bg-blue-500 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <i class="ri-medal-line mr-3 text-lg"></i>
+                <span class="text-sm">Skor</span>
+            </a>
+        </li>
+        <li class="mb-1 group">
+            <a href="/"
+                class="flex items-center py-2 px-4 text-gray-800 hover:bg-blue-500 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <i class="ri-line-chart-line mr-3 text-lg"></i>
+                <span class="text-sm">Analisa</span>
+            </a>
+        </li>
+        <li class="mb-1 group">
+            <a href="/"
+                class="flex items-center py-2 px-4 text-gray-800 hover:bg-blue-500 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <i class="ri-pages-line mr-3 text-lg"></i>
+                <span class="text-sm">Responden</span>
+            </a>
+        </li>
+        <li class="mb-1 group">
+            <a href="#" wire:click.prevent='logout'
+                class="flex items-center py-2 px-4 text-gray-800 hover:bg-blue-500 hover:text-gray-100 rounded-md group-[.active]:bg-gray-800 group-[.active]:text-white group-[.selected]:bg-gray-950 group-[.selected]:text-gray-100">
+                <i class="ri-logout-box-line mr-3 text-lg"></i>
+                <span class="text-sm">Logout</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
+<!-- end: Sidebar -->
