@@ -38,12 +38,13 @@
                 <img src="{{ asset('assets/img/user.png') }}" alt="Profile Picture"
                     class="w-10 h-10 rounded-full cursor-pointer" id="profilePicture">
                 <div id="dropdownMenu" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 hidden">
-                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Profile</a>
-                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Settings</a>
-                    <form method="POST" action="/logout">
+                    <form>
                         @csrf
                         <button type="submit"
-                            class="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-200">Logout</button>
+                            class="block w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-200 text-sm">
+                            <i class="ri-logout-box-line text-sm pl-3"></i>
+                            Logout
+                        </button>
                     </form>
                 </div>
             </div>
