@@ -51,7 +51,8 @@
 
     @if ($isNewVariable)
         <div class="fixed inset-0 flex items-center justify-center z-50">
-            <div class="bg-white p-6 rounded shadow-lg max-w-sm w-full relative z-10 max-h-full overflow-y-auto">
+            <div
+                class="bg-white p-6 rounded shadow-lg max-w-sm w-full relative z-10 max-h-full overflow-y-auto mx-2 lg:mx-0">
                 <form wire:submit.prevent='storeVariable'>
                     <div>
                         <label for="variable" class="block mb-2 text-sm font-medium text-gray-900">

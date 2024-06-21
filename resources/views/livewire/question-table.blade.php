@@ -60,7 +60,7 @@
     </div>
     @if ($showDeleteModal)
         <div class="fixed inset-0 flex items-center justify-center z-50">
-            <div class="bg-white p-6 rounded shadow-lg max-w-sm w-full relative z-10">
+            <div class="bg-white p-6 rounded shadow-lg max-w-sm w-full relative z-10 mx-2 lg:mx-0">
                 <h2 class="text-lg font-bold mb-4">Konfirmasi Hapus</h2>
                 <p>Anda yakin akan menghapus pertanyaan ini?</p>
                 <div class="mt-4 flex justify-end space-x-2">
