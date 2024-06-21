@@ -6,7 +6,7 @@
             <div
                 class="flex flex-wrap justify-between items-center text-base font-medium text-center border-b border-gray-200 rounded-t-lg bg-gray-50 py-4 px-3">
                 <h2 class="font-medium text-blue-500">
-                    Tambah Data Pertanyaan
+                    Edit Data Pertanyaan
                 </h2>
             </div>
 

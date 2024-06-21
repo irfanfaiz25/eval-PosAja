@@ -59,6 +59,12 @@ class AddQuestionForm extends Component
         return redirect()->to(route('question.add'));
     }
 
+    public function deleteVariable($id)
+    {
+        $variable = Variable::find($id);
+        $variable->delete();
+    }
+
     public function render()
     {
         return view('livewire.add-question-form', [

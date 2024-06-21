@@ -1,6 +1,6 @@
 <div class="mx-6 my-4">
 
-    <form wire:submit.prevent='store }}'>
+    <form wire:submit.prevent='store'>
         <div class="grid gap-6 mb-6 w-full md:w-32">
             <div>
                 <label for="text" class="block mb-2 text-sm font-medium text-gray-900">
@@ -51,7 +51,7 @@
 
     @if ($isNewVariable)
         <div class="fixed inset-0 flex items-center justify-center z-50">
-            <div class="bg-white p-6 rounded shadow-lg max-w-sm w-full relative z-10">
+            <div class="bg-white p-6 rounded shadow-lg max-w-sm w-full relative z-10 max-h-full overflow-y-auto">
                 <form wire:submit.prevent='storeVariable'>
                     <div>
                         <label for="variable" class="block mb-2 text-sm font-medium text-gray-900">
@@ -76,6 +76,18 @@
                             class="px-4 py-1.5 bg-blue-500 hover:bg-blue-700 text-white rounded text-sm font-medium">Tambah</button>
                     </div>
                 </form>
+                <h2 class="text-sm font-medium text-gray-800 text-center mb-1 mt-3">List Variable</h2>
+                @foreach ($variables as $variable)
+                    <div class="flex justify-between items-center bg-gray-100 w-full px-2 py-1 mb-1 rounded-md">
+                        <h2 class="text-sm text-gray-800 font-medium">
+                            {{ $variable->name }}
+                        </h2>
+                        <button wire:click='deleteVariable({{ $variable->id }})'
+                            class="bg-none text-red-500 hover:text-red-700 text-sm p-1 rounded-sm">
+                            <i class="ri-delete-bin-6-line"></i>
+                        </button>
+                    </div>
+                @endforeach
             </div>
             <!-- Background overlay -->
             <div wire:click="$set('isNewVariable', false)" class="fixed inset-0 bg-black opacity-50 z-0"></div>

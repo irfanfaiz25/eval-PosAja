@@ -77,6 +77,18 @@
                             class="px-4 py-1.5 bg-blue-500 hover:bg-blue-700 text-white rounded text-sm font-medium">Tambah</button>
                     </div>
                 </form>
+                <h2 class="text-sm font-medium text-gray-800 text-center mb-1 mt-3">List Variable</h2>
+                @foreach ($variables as $variable)
+                    <div class="flex justify-between items-center bg-gray-100 w-full px-2 py-1 mb-1 rounded-md">
+                        <h2 class="text-sm text-gray-800 font-medium">
+                            {{ $variable->name }}
+                        </h2>
+                        <button wire:click='deleteVariable({{ $variable->id }})'
+                            class="bg-none text-red-500 hover:text-red-700 text-sm p-1 rounded-sm">
+                            <i class="ri-delete-bin-6-line"></i>
+                        </button>
+                    </div>
+                @endforeach
             </div>
             <!-- Background overlay -->
             <div wire:click="$set('isNewVariable', false)" class="fixed inset-0 bg-black opacity-50 z-0"></div>

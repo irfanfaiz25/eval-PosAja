@@ -71,7 +71,13 @@ class EditQuestionForm extends Component
             'name' => $validated['variable']
         ]);
 
-        return redirect()->to(route('question.add'));
+        return redirect()->to(route('question.edit', $this->question_id));
+    }
+
+    public function deleteVariable($id)
+    {
+        $variable = Variable::find($id);
+        $variable->delete();
     }
 
     public function render()
