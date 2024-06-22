@@ -39,9 +39,11 @@
             <div class="flex flex-col md:flex-row md:flex-wrap md:space-x-16 lg:space-x-52 sm:space-y-2 md:space-y-0">
                 @foreach ($scores as $score)
                     <div class="flex items-center text-sm">
-                        <input wire:model='answers.{{ $question->id }}' type="radio" id="option1{{ $question->id }}"
-                            class="mr-1" value="{{ $score->id }}">
-                        <label for="option1{{ $question->id }}" class="mr-4 uppercase">{{ $score->name }}</label>
+                        <input wire:model='answers.{{ $question->id }}' type="radio"
+                            id="option{{ $score->id . '-' . $question->id }}" class="mr-1"
+                            value="{{ $score->id }}">
+                        <label for="option{{ $score->id . '-' . $question->id }}"
+                            class="mr-4 uppercase">{{ $score->name }}</label>
                     </div>
                 @endforeach
             </div>
