@@ -1,6 +1,6 @@
 <div class="mx-5 my-3">
     @if (session('success'))
-        <div id="alert-notification" class="mx-4 px-5 py-6 bg-green-500 text-white flex justify-between rounded">
+        <div id="alert-notification" class="mx-0 my-3 px-5 py-6 bg-green-500 text-white flex justify-between rounded">
             <div class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
                     fill="currentColor">
