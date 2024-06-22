@@ -23,3 +23,7 @@ Route::get('/questions/{id}/edit', function ($id) {
 Route::get('/scores', function () {
     return view('contents.scores');
 })->name('score.index');
+
+Route::get('/analysis', function () {
+    return view('contents.analysis');
+})->name('analysis.index');

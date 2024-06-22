@@ -27,8 +27,8 @@
             </a>
         </li>
         <li class="mb-1 group">
-            <a href="/analytics"
-                class="flex items-center py-2 px-4 hover:bg-blue-500 hover:text-gray-100 rounded-md {{ request()->is('analytics*') ? 'bg-blue-500 text-gray-100' : 'text-gray-800 ' }}">
+            <a href="/analysis"
+                class="flex items-center py-2 px-4 hover:bg-blue-500 hover:text-gray-100 rounded-md {{ request()->is('analysis*') ? 'bg-blue-500 text-gray-100' : 'text-gray-800 ' }}">
                 <i class="ri-line-chart-line mr-3 text-lg"></i>
                 <span class="text-sm">Analisa</span>
             </a>
