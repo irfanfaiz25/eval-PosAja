@@ -24,6 +24,10 @@ Route::get('/scores', function () {
     return view('contents.scores');
 })->name('score.index');
 
+Route::get('/results', function () {
+    return view('contents.results');
+})->name('result.index');
+
 Route::get('/analysis', function () {
     return view('contents.analysis');
 })->name('analysis.index');
