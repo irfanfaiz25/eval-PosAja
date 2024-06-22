@@ -34,10 +34,10 @@
             </a>
         </li>
         <li class="mb-1 group">
-            <a href="/respondents"
-                class="flex items-center py-2 px-4 hover:bg-blue-500 hover:text-gray-100 rounded-md {{ request()->is('respondents*') ? 'bg-blue-500 text-gray-100' : 'text-gray-800 ' }}">
+            <a href="/results"
+                class="flex items-center py-2 px-4 hover:bg-blue-500 hover:text-gray-100 rounded-md {{ request()->is('results*') ? 'bg-blue-500 text-gray-100' : 'text-gray-800 ' }}">
                 <i class="ri-pages-line mr-3 text-lg"></i>
-                <span class="text-sm">Responden</span>
+                <span class="text-sm">Hasil</span>
             </a>
         </li>
     </ul>

@@ -19,3 +19,7 @@ Route::get('/questions/{id}/edit', function ($id) {
         'id' => $id
     ]);
 })->name('question.edit');
+
+Route::get('/scores', function () {
+    return view('contents.scores');
+})->name('score.index');

@@ -25,9 +25,20 @@ class DatabaseSeeder extends Seeder
 
         Question::factory()->count(20)->create();
 
-        // DB::table('questions')->insert([
-        //     'text' => Str::random(10),
-        //     'variable_id' => '1'
-        // ]);
+        DB::table('scores')->insert([
+            'name' => 'ss',
+        ]);
+
+        DB::table('scores')->insert([
+            'name' => 's',
+        ]);
+
+        DB::table('scores')->insert([
+            'name' => 'ks',
+        ]);
+
+        DB::table('scores')->insert([
+            'name' => 'ts',
+        ]);
     }
 }
