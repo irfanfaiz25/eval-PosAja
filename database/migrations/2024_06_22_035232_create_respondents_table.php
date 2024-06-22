@@ -12,9 +12,10 @@ return new class extends Migration {
     {
         Schema::create('respondents', function (Blueprint $table) {
             $table->id();
+            $table->string('respondent_code', 255);
             $table->string('name', 100);
             $table->integer('question_id');
-            $table->integer('variable_id');
+            $table->integer('score_id');
             $table->timestamps();
         });
     }

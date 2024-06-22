@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-5 px-5">
+        <div class="mt-5 pb-5 px-5">
             @yield('content')
         </div>
     </main>
