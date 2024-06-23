@@ -116,6 +116,15 @@ class ChartResults extends Component
         );
     }
 
+    public function deleteRespondent($respondent_code)
+    {
+        $respondent = Respondent::where('respondent_code', $respondent_code);
+
+        $respondent->delete();
+
+        session()->flash('success', 'Data responden berhasil di hapus');
+    }
+
     public function render()
     {
         $questions = Question::all();

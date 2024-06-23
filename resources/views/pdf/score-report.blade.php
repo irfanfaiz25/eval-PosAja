@@ -208,6 +208,7 @@
                         <td class="table-border">{{ $questionData[$score] ?? 0 }}</td>
                     @endforeach
                     <td class="table-border">{{ $questionData['total'] }}</td>
+                    <td class="table-border">{{ $questionData['total'] }}</td>
                 </tr>
             @endforeach
         </tbody>
