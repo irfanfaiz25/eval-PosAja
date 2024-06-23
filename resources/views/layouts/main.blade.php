@@ -17,7 +17,7 @@
     {{-- style --}}
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
-    {{-- <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
 
     @livewireStyles
 
