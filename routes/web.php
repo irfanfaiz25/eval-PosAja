@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChartController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', function () {
@@ -27,6 +28,8 @@ Route::get('/scores', function () {
 Route::get('/results', function () {
     return view('contents.results');
 })->name('result.index');
+
+Route::get('/download-charts-pdf', [ChartController::class, 'downloadPdf'])->name('charts.downloadPdf');
 
 Route::get('/analysis', function () {
     return view('contents.analysis');
