@@ -34,7 +34,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('guest')->group(function () {
-    Route::get('/admin', function () {
+    Route::get('/', function () {
         return view('auth.login');
     })->name('login');
 });
