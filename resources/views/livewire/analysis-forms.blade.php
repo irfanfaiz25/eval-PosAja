@@ -20,13 +20,29 @@
     @endif
     <form wire:submit.prevent='submit'>
         <div>
-            <label for="value_ks" class="block mb-1 text-sm font-semibold text-gray-900">
+            <label for="text" class="block mb-1 text-sm font-semibold text-gray-900">
                 Responden
             </label>
             <input wire:model='respondent_name' type="text" id="text"
                 class="bg-gray-50 border border-gray-300 @error('respondent_name') border-red-600 @enderror text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5"
                 placeholder="Nama responden" />
             @error('respondent_name')
+                <p class="mt-2 text-xs text-red-600">
+                    {{ $message }}
+                </p>
+            @enderror
+        </div>
+        <div>
+            <label for="gender" class="block mb-1 mt-2 text-sm font-semibold text-gray-900">
+                Jenis Kelamin
+            </label>
+            <select wire:model='gender' type="text" id="gender"
+                class="bg-gray-50 border border-gray-300 @error('gender') border-red-600 @enderror text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5">
+                <option value="">--pilih jenis kelamin--</option>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+            @error('gender')
                 <p class="mt-2 text-xs text-red-600">
                     {{ $message }}
                 </p>

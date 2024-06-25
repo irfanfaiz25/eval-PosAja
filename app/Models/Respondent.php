@@ -12,6 +12,7 @@ class Respondent extends Model
     protected $fillable = [
         'respondent_code',
         'name',
+        'gender',
         'question_id',
         'score_id'
     ];

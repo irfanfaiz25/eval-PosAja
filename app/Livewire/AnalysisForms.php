@@ -11,6 +11,7 @@ use illuminate\Support\Str;
 class AnalysisForms extends Component
 {
     public $respondent_name;
+    public $gender;
     public $answers = [];
 
     public function updated($questionId, $value)
@@ -22,8 +23,10 @@ class AnalysisForms extends Component
     {
         $this->validate([
             'respondent_name' => 'required',
+            'gender' => 'required',
         ], [
-            'required' => 'Nama responden tidak boleh kosong'
+            'respondent_name.required' => 'Nama responden harus diisi',
+            'gender.required' => 'Jenis kelamin harus di pilih'
         ]);
 
         $questionIds = array_keys(array_filter($this->answers, function ($key) {
@@ -32,6 +35,7 @@ class AnalysisForms extends Component
 
         $answers = array_intersect_key($this->answers, array_flip($questionIds));
         $respondentName = $this->answers['respondent_name'];
+        $gender = $this->answers['gender'];
 
         $uniqueCode = $this->generateUniqueCode();
 
@@ -39,12 +43,14 @@ class AnalysisForms extends Component
             Respondent::create([
                 'respondent_code' => $uniqueCode,
                 'name' => $respondentName,
+                'gender' => $gender,
                 'question_id' => $questionId,
                 'score_id' => $answers[$questionId],
             ]);
         }
 
         $this->reset('respondent_name');
+        $this->reset('gender');
         $this->answers = [];
 
         session()->flash('success', 'Analisa berhasil disubmit');
@@ -53,6 +59,7 @@ class AnalysisForms extends Component
     public function resetForm()
     {
         $this->reset('respondent_name');
+        $this->reset('gender');
         $this->answers = [];
     }
 

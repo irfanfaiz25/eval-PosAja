@@ -40,13 +40,18 @@
                     <tr>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">No
                         </th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama
+                        </th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jenis
+                            Kelamin
                         </th>
                         @foreach ($questions as $index => $question)
                             <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                 P{{ $index + 1 }}</th>
                         @endforeach
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total
+                        </th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                         </th>
                     </tr>
                 </thead>
@@ -62,6 +67,7 @@
                         <tr>
                             <td class="px-6 py-4 whitespace-nowrap">{{ $num++ }}</td>
                             <td class="px-6 py-4 whitespace-nowrap">{{ $respondent->name }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">{{ $respondent->gender }}</td>
                             @foreach ($questions as $index => $question)
                                 @php
                                     $score = $respondents->firstWhere('question_id', $question->id)->score->value ?? 0;

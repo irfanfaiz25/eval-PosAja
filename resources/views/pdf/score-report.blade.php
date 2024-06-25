@@ -136,6 +136,8 @@
                     NO</th>
                 <th class="table-border">
                     Nama</th>
+                <th class="table-border">
+                    Jenis Kelamin</th>
                 @foreach ($questions as $index => $question)
                     <th class="table-border">
                         P{{ $index + 1 }}
@@ -160,6 +162,9 @@
                     </td>
                     <td class="table-border text-left">
                         <span>{{ $respondent->name }}</span>
+                    </td>
+                    <td class="table-border text-left">
+                        <span>{{ $respondent->gender }}</span>
                     </td>
                     @foreach ($questions as $index => $question)
                         @php
@@ -207,7 +212,6 @@
                     @foreach ($scores as $score)
                         <td class="table-border">{{ $questionData[$score] ?? 0 }}</td>
                     @endforeach
-                    <td class="table-border">{{ $questionData['total'] }}</td>
                     <td class="table-border">{{ $questionData['total'] }}</td>
                 </tr>
             @endforeach

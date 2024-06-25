@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('respondent_code', 255);
             $table->string('name', 100);
+            $table->string('gender', 100);
             $table->integer('question_id');
             $table->integer('score_id');
             $table->timestamps();
