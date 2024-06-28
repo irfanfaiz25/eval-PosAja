@@ -39,7 +39,7 @@ Route::middleware('guest')->group(function () {
     })->name('login');
 });
 
-Route::get('/analysis', function () {
-    return view('contents.analysis');
-})->name('analysis.index');
+Route::get('/quissionaire', function () {
+    return view('contents.quissionaire');
+})->name('quissionaire.index');
 

@@ -8,7 +8,7 @@ use App\Models\Score;
 use Livewire\Component;
 use illuminate\Support\Str;
 
-class AnalysisForms extends Component
+class QuissionaireForms extends Component
 {
     public $respondent_name;
     public $gender;
@@ -78,7 +78,7 @@ class AnalysisForms extends Component
     {
         $questions = Question::all();
         $scores = Score::all();
-        return view('livewire.analysis-forms', [
+        return view('livewire.quissionaire-forms', [
             'questions' => $questions,
             'scores' => $scores
         ]);
