@@ -1,7 +1,7 @@
 <div class="fixed left-0 top-0 w-64 h-full bg-white p-4 z-50 sidebar-menu transition-transform">
     <a href="#" class="flex items-center pb-4 border-b border-b-blue-500">
         <img src="{{ asset('assets/img/logo.png') }}" alt="" class="w-8 h-8 rounded object-cover">
-        <span class="text-lg font-bold text-gray-800 ml-3">e-PosAja</span>
+        <span class="text-lg font-bold text-gray-800 ml-3">eval-PosAja</span>
     </a>
 
     <ul class="mt-4">
