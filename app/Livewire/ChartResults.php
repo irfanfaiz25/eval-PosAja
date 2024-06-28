@@ -60,7 +60,7 @@ class ChartResults extends Component
             ->get()
             ->groupBy('respondent_code');
 
-        $possibleScores = ['ss', 's', 'ks', 'ts'];
+        $possibleScores = ['ss', 's', 'n', 'ks', 'ts'];
 
         $questionsData = [];
 

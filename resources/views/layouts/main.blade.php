@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{-- logo title --}}
-    {{-- <link rel="icon" href="{{ asset('img/simobile-logo.png') }}"> --}}
+    <link rel="icon" href="{{ asset('assets/img/logo.png') }}">
 
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">

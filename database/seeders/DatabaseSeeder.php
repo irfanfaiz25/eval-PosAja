@@ -37,6 +37,11 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('scores')->insert([
+            'name' => 'n',
+            'created_at' => now()
+        ]);
+
+        DB::table('scores')->insert([
             'name' => 'ks',
             'created_at' => now()
         ]);

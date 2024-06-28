@@ -52,7 +52,7 @@
             <h4 class="text-sm mt-4 mb-2 font-semibold text-gray-800">
                 {{ $question->text }}
             </h4>
-            <div class="flex flex-col md:flex-row md:flex-wrap md:space-x-16 lg:space-x-52 sm:space-y-2 md:space-y-0">
+            <div class="flex flex-col md:flex-row md:flex-wrap md:space-x-8 lg:space-x-36 sm:space-y-2 md:space-y-0">
                 @foreach ($scores as $score)
                     <div class="flex items-center text-sm">
                         <input wire:model='answers.{{ $question->id }}' type="radio"
