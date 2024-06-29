@@ -4,7 +4,7 @@
         <div class="grid grid-cols-5 gap-4">
             <div>
                 <label for="value_ss" class="block mb-1 text-sm font-medium text-gray-900">
-                    SS
+                    SS <span class="text-gray-600">(Sangat Setuju)</span>
                 </label>
                 <input wire:model='value_ss' type="text" id="value_ss"
                     class="bg-gray-50 border border-gray-300 @error('value_ss') border-red-600 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" />
@@ -16,7 +16,7 @@
             </div>
             <div>
                 <label for="value_s" class="block mb-1 text-sm font-medium text-gray-900">
-                    S
+                    S <span class="text-gray-600">(Setuju)</span>
                 </label>
                 <input wire:model='value_s' type="text" id="value_s"
                     class="bg-gray-50 border border-gray-300 @error('value_s') border-red-600 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" />
@@ -28,7 +28,7 @@
             </div>
             <div>
                 <label for="value_n" class="block mb-1 text-sm font-medium text-gray-900">
-                    N
+                    N <span class="text-gray-600">(Netral)</span>
                 </label>
                 <input wire:model='value_n' type="text" id="value_n"
                     class="bg-gray-50 border border-gray-300 @error('value_n') border-red-600 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" />
@@ -40,7 +40,7 @@
             </div>
             <div>
                 <label for="value_ks" class="block mb-1 text-sm font-medium text-gray-900">
-                    KS
+                    KS <span class="text-gray-600">(Kurang Setuju)</span>
                 </label>
                 <input wire:model='value_ks' type="text" id="value_ks"
                     class="bg-gray-50 border border-gray-300 @error('value_ks') border-red-600 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" />
@@ -52,7 +52,7 @@
             </div>
             <div>
                 <label for="value_ts" class="block mb-1 text-sm font-medium text-gray-900">
-                    TS
+                    TS <span class="text-gray-600">(Tidak Setuju)</span>
                 </label>
                 <input wire:model='value_ts' type="text" id="value_ts"
                     class="bg-gray-50 border border-gray-300 @error('value_ts') border-red-600 @enderror text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2" />

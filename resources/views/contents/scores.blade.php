@@ -22,10 +22,15 @@
 
     <div class="w-full bg-white border border-gray-200 rounded-lg shadow">
         <div
-            class="flex flex-wrap justify-between items-center text-base font-medium text-center border-b border-gray-200 rounded-t-lg bg-gray-50 py-4 px-3">
-            <h2 class="font-medium text-blue-500">
-                Skor
-            </h2>
+            class="flex justify-start items-start text-base font-medium text-start border-b border-gray-200 rounded-t-lg bg-gray-50 py-4 px-3">
+            <div class="block">
+                <h2 class="font-medium text-blue-500">
+                    Skor Skala Linkert
+                </h2>
+                <p class="font-normal text-sm text-gray-800">
+                    Untuk menghitung pembobotan skor setiap pertanyaan kuesioner menggunakan skala linkert :
+                </p>
+            </div>
         </div>
 
         @livewire('score-forms')
