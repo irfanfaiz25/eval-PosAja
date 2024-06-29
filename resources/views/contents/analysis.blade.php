@@ -9,7 +9,7 @@
             </h2>
         </div>
 
-        @livewire('analysis-forms')
+        @livewire('analysis-table')
 
     </div>
 @endsection
