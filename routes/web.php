@@ -43,7 +43,7 @@ Route::middleware('guest')->group(function () {
     })->name('login');
 });
 
-Route::get('/quissionaire', function () {
-    return view('contents.quissionaire');
-})->name('quissionaire.index');
+Route::get('/questionnaire', function () {
+    return view('contents.questionnaire');
+})->name('questionnaire.index');
 

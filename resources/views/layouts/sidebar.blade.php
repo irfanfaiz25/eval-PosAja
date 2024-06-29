@@ -37,8 +37,8 @@
         @endauth
 
         <li class="mb-1 group">
-            <a href="/quissionaire"
-                class="flex items-center py-2 px-4 hover:bg-blue-500 hover:text-gray-100 rounded-md {{ request()->is('quissionaire*') ? 'bg-blue-500 text-gray-100' : 'text-gray-800 ' }}">
+            <a href="/questionnaire"
+                class="flex items-center py-2 px-4 hover:bg-blue-500 hover:text-gray-100 rounded-md {{ request()->is('questionnaire*') ? 'bg-blue-500 text-gray-100' : 'text-gray-800 ' }}">
                 <i class="ri-question-answer-line mr-3 text-lg"></i>
                 <span class="text-sm">Kuisioner</span>
             </a>
